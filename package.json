@@ -1,0 +1,36 @@
+{
+  "name": "@random-mesh/rm-chip8-dsl",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/chip8.js",
+  "types": "./dist/chip8.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/chip8.js",
+      "types": "./dist/chip8.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "chip8",
+    "chip-8",
+    "dsl",
+    "typescript",
+    "compiler",
+    "emulator",
+    "retro"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "vitest": "^3.1.0"
+  }
+}
